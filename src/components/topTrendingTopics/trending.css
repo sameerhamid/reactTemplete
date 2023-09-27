@@ -1,0 +1,36 @@
+.trending_container {
+  margin-top: 3rem;
+}
+
+.trending_container .trending_heading .heading {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.trending_container .trending_heading .discover {
+  font-size: 1.6rem;
+}
+
+.trending_container .trending_cards {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+@media only screen and (max-width: 600px) {
+  .trending_container .trending_cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+  }
+
+  .trending_container .trending_heading .heading {
+    font-size: 1.6rem;
+    text-align: center;
+    /* font-weight: bold; */
+  }
+
+  .trending_container .trending_heading .discover {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+}

@@ -1,0 +1,48 @@
+.auther_card {
+  display: flex;
+  flex-direction: column;
+  width: 230px;
+  background-color: #fff;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  height: 250px;
+  margin-top: 3rem;
+}
+.auther_card .auth_card_img {
+  width: 100%;
+  position: relative;
+}
+
+.auther_card .auth_card_img img {
+  width: 100%;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  position: relative;
+  height: 170px;
+  object-fit: cover;
+}
+.auther_card .card_profile {
+  display: flex;
+  width: 100%;
+  position: relative;
+}
+.auther_card .card_profile img {
+  width: 70px;
+  border: 2px solid #fff;
+  height: 70px;
+  margin: auto;
+  border-radius: 50%;
+  object-fit: cover;
+  position: absolute;
+  right: 34%;
+  top: -44px;
+}
+.auther_card .auther_name {
+  margin-top: 2.6rem;
+}
+
+.card_footer {
+  margin-bottom: 5rem;
+  color: #706f6f;
+}

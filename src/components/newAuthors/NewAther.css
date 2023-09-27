@@ -1,0 +1,29 @@
+.auther_container {
+  margin-top: 3rem;
+}
+.auther_container .auther_heading {
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+}
+.auther_container .auther_heading .new {
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.auther_container .auther_heading .head_desc {
+  font-size: 1.3rem;
+  text-align: center;
+}
+.card_container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+@media only screen and (max-width: 600px) {
+  .card_container {
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    gap: 20px;
+  }
+}

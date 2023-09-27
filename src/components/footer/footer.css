@@ -1,0 +1,37 @@
+.footerContainer {
+  background-color: #fff;
+  padding-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.footerContainer .footerLinks {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footerContainer .footerLinks .socialLinks .logo img {
+  width: 44px;
+  height: 50px;
+  object-fit: cover;
+}
+.footerContainer .footerLinks .socialLinks .facebook {
+  display: flex;
+  gap: 10px;
+}
+
+.linkBold {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.logo {
+  font-size: 22px;
+}
+
+@media only screen and (max-width: 600px) {
+  .footerContainer .footerLinks {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+}

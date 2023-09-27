@@ -1,0 +1,127 @@
+.main_wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.main_wrapper .wrapper_heading {
+  display: flex;
+  flex-direction: column;
+}
+
+.main_wrapper .wrapper_heading .heading {
+  font-size: 2.3rem;
+  font-weight: bold;
+}
+
+.main_wrapper .wrapper_heading .desc {
+  font-size: 1.5rem;
+}
+
+.main_wrapper .card_container {
+  position: relative;
+  display: flex;
+}
+
+.main_wrapper .card_container .cards {
+  position: relative;
+  flex: 1;
+  top: 100px;
+}
+.main_wrapper .card_container .cards .card {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0px 0px 2px 2px #ccc;
+  padding: 2rem;
+  border-radius: 20px;
+  right: -60px;
+}
+
+.main_wrapper .card_container .cards .card .industry {
+  margin-top: 1rem;
+  margin-bottom: 1.2rem;
+}
+.main_wrapper .card_container .cards .card .industry span {
+  background-color: #eca50b;
+  padding: 6px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  color: #fff;
+}
+
+.main_wrapper .card_container .cards .card .title {
+  font-size: 1.5rem;
+  margin-bottom: 1.6rem;
+}
+.main_wrapper .card_container .cards .card .profile {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.main_wrapper .card_container .cards .card .like_msg_save {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main_wrapper .card_container .cards .card .like_msg_save .like_msg {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+.main_wrapper .card_container .cards .card .like_msg_save .like_msg .icon {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.main_wrapper .card_container .cards .card .profile_img img {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 10rem;
+  object-fit: cover;
+}
+
+.main_wrapper .left_container img {
+  width: 800px;
+  border-radius: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+  .main_wrapper .card_container {
+    flex-direction: column;
+  }
+
+  .main_wrapper .wrapper_heading {
+    text-wrap: wrap;
+  }
+  .main_wrapper .left_container img {
+    width: 100%;
+  }
+
+  .main_wrapper .card_container .cards {
+    width: 250px;
+    position: relative;
+  }
+
+  .main_wrapper .card_container .cards .card {
+    position: relative;
+  }
+  .main_wrapper .card_container .cards .card {
+    right: 32px;
+    width: 100%;
+    margin: auto;
+    top: -50px;
+  }
+
+  .main_wrapper .wrapper_heading .heading {
+    font-size: 1.6rem;
+    font-weight: bold;
+  }
+
+  .main_wrapper .wrapper_heading .desc {
+    font-size: 1.2rem;
+  }
+}

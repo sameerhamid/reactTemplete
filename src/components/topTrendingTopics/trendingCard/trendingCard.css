@@ -1,0 +1,36 @@
+.trending_card_conatainer {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.card_img {
+  width: 230px;
+  border-radius: 20px;
+  margin-bottom: 1rem;
+}
+
+.card_img img {
+  width: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+  cursor: pointer;
+  filter: opacity(86%);
+  height: 150px;
+}
+
+.card_img img:hover {
+  filter: opacity(100%);
+}
+
+.trending_card_conatainer .trending_footer {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.trending_card_conatainer .trending_footer .trending_color {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}

@@ -1,0 +1,127 @@
+.mainContiainer {
+  width: 100%;
+  background-color: #111827;
+  height: 800px;
+}
+
+.mainContiainer .headings {
+  padding-top: 3rem;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+.mainContiainer .headings .headingOne {
+  font-size: 2rem;
+  color: #fff;
+  font-weight: bold;
+}
+
+.mainContiainer .headings .headingTwo {
+  font-size: 1.2rem;
+  color: #dfd3d3;
+}
+
+.mainContiainer .cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 50px;
+}
+.mainContiainer .exploreVidCads {
+  /* width: 300px; */
+}
+.mainContiainer .exploreVidCads .exploreImg {
+  border-radius: 20px;
+  position: relative;
+  width: 100%;
+}
+
+.mainContiainer .exploreVidCads .exploreImg img {
+  border-radius: 20px;
+  width: 100%;
+  position: relative;
+  height: 200px;
+  object-fit: cover;
+}
+
+.mainContiainer .exploreVidCads .badgeSave {
+  color: #fff;
+  position: relative;
+  /* top: 200px; */
+  display: flex;
+  justify-content: space-between;
+}
+
+.mainContiainer .exploreVidCads .badgeSave .badge {
+  position: absolute;
+  top: -200px;
+  margin: 10px;
+}
+
+.mainContiainer .exploreVidCads .badgeSave .badge span {
+  background-color: #fee2e2;
+  border-radius: 20px;
+  padding: 1px 10px;
+  font-size: 14px;
+  color: #111827;
+}
+.mainContiainer .exploreVidCads .badgeSave .save {
+  position: absolute;
+  top: -200px;
+  left: 300px;
+  margin: 10px;
+  font-size: 18px;
+}
+
+.exploreVidCads .profile {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  color: #fff;
+  line-height: 1.2;
+}
+
+.exploreVidCads .profile .profileImg img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.exploreVidCads .profile .profileTitleDate {
+  font-size: 14px;
+}
+
+.exploreVidCads .profile .profileTitleDate .profileTitle {
+  font-size: 15px;
+  font-weight: bold;
+}
+.exploreVidCads .profile .profileTitleDate .profileNameDate {
+  display: flex;
+  gap: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  .mainContiainer {
+    height: 2100px;
+  }
+
+  .mainContiainer .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .mainContiainer .exploreVidCads .badgeSave .save {
+    position: absolute;
+    top: -200px;
+    left: 260px;
+    margin: 10px;
+    font-size: 18px;
+  }
+  .mainContiainer .headings .headingOne {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
+  .mainContiainer .headings .headingTwo {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+}

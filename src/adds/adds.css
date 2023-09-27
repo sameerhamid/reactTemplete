@@ -1,0 +1,24 @@
+.adds_container {
+  margin-top: 3rem;
+  width: 100%;
+  background-color: #fecaca;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.adds_container .adds_card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 24vh;
+  border-radius: 20px;
+}
+
+.adds_container .adds_card .add_card_text {
+  color: #f3eeee;
+  font-size: 3rem;
+  text-shadow: 16px 18px 0px #e0dddd;
+}

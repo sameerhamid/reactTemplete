@@ -1,0 +1,36 @@
+.explore_container {
+  margin-top: 4rem;
+}
+.explore_container .explore_card_container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+.explore_container .explore_heading {
+  margin-bottom: 3rem;
+  text-align: center;
+}
+.explore_container .explore_heading .heading {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.explore_container .explore_heading .sec_heading {
+  font-size: 1.6rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .explore_container .explore_card_container {
+    grid-template-columns: 1fr;
+    place-items: center;
+  }
+
+  .explore_container .explore_heading .heading {
+    font-size: 1.6rem;
+    font-weight: bold;
+  }
+
+  .explore_container .explore_heading .sec_heading {
+    font-size: 1.2rem;
+  }
+}
