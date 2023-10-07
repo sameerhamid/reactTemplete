@@ -48,14 +48,14 @@ const ExploreVideos = () => {
         },
     ]
     return (
-        <div className='mainContiainer'>
+        <div className='mainContiainer' id='exploreVideos'>
             <Wrapper>
                 <div className="headings">
                     <div className="headingOne">Explore latest video articles</div>
                     <div className="headingTwo">Hover on the post card and preview video 🥡</div>
                 </div>
                 <div className="cards">
-                    {cards.map(card => <ExploreVideoCard card={card} />)}
+                    {cards.map((card, id) => <ExploreVideoCard card={card} key={id} />)}
                 </div>
             </Wrapper>
         </div>

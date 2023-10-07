@@ -31,7 +31,7 @@ const Article = () => {
 
     const RightArticleCard = ({ card, sectionTitle }) => {
         return (
-            <div className="card">
+            <div className="card" id='article'>
                 <div className="left_card">
                     <div className="badge"><span>{sectionTitle}</span></div>
                     <div className="card_heading">{card.heading}</div>
@@ -112,7 +112,7 @@ const Article = () => {
                     <LeftArticleCard />
                 </div>
                 <div className="right">
-                    {cardDetails.map(card => <RightArticleCard card={card} sectionTitle={"Electorincs"} />)}
+                    {cardDetails.map((card, id) => <RightArticleCard card={card} sectionTitle={"Electorincs"} key={id} />)}
                 </div>
             </div>
         </div>

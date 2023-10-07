@@ -35,13 +35,13 @@ const NewAuther = () => {
         }
     ]
     return (
-        <div className='auther_container'>
+        <div className='auther_container' id='author'>
             <div className="auther_heading">
                 <div className='new'>Newest authors</div>
                 <div className='head_desc'>Say hello to future creator potentials</div>
             </div>
             <div className="card_container">
-                {authers && authers.map(author => <NewAutherCard author={author} />)}
+                {authers && authers.map((author, id) => <NewAutherCard author={author} key={id} />)}
             </div>
         </div>
     )

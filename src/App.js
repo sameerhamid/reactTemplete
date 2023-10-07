@@ -10,10 +10,11 @@ import Trending from './components/topTrendingTopics/Trending'
 import Adds from './adds/Adds';
 import ExploreVideos from './components/exploreVideos/ExploreVideos';
 import Footer from './components/footer/Footer';
+import NavbarSec from './components/NavbarSec';
 function App() {
   return (
     <div className="app_container">
-      <Navbar />
+      <NavbarSec />
       <Wrapper>
         <Banner />
         <NewAuther />

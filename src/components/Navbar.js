@@ -27,44 +27,74 @@ const Navbar = () => {
         },
     ];
 
-    const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
+    // const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
+    // const [toggleImage, setToggleImage] = useState(true);
 
-    return (
-        <div className='nav_wrapper'>
-            <Wrapper>
-                <div className='nav_container'>
-                    <div className='nav_logo'>
-                        <img src='/assets/images/logo.png' alt='Logo' />
-                    </div>
-                    <div
-                        className='mobile_menu_toggle'
-                        onClick={() => setMobileMenuOpen(!isMobileMenuOpen)}
-                    >
-                        <img src='/assets/images/hamburgMenu.png' alt=''></img>
-                    </div>
+    // const toggleMobileMenu = () => {
+    //     setMobileMenuOpen(!isMobileMenuOpen);
+    //     setToggleImage(!toggleImage);
+    // };
 
-                    <div className={`links ${isMobileMenuOpen ? 'mobile_menu_open' : ''}`}>
-                        {navLinks.map((link) => (
-                            <div key={link.id} className='link'>
-                                {link.label}
-                            </div>
-                        ))}
+    // return (
+    //     <div className='nav_wrapper'>
+    //         <Wrapper>
+    //             <div className='nav_container'>
+    //                 <div className='nav_logo'>
+    //                     <img src='/assets/images/logo.png' alt='Logo' />
+    //                 </div>
+    //                 <div
+    //                     className='mobile_menu_toggle'
+    //                     onClick={toggleMobileMenu}
+    //                 >
+    //                     {toggleImage ? (
+    //                         <img src='/assets/images/hamburgMenu.png' alt='' />
+    //                     ) : (
+    //                         <img src='/assets/images/cross-23-16.png' alt='' />
+    //                     )}
+    //                 </div>
+
+    //                 <div className={`links ${isMobileMenuOpen ? 'mobile_menu_open' : ''}`}>
+    //                     {navLinks.map((link) => (
+    //                         <div key={link.id} className='link'>
+    //                             {link.label}
+    //                         </div>
+    //                     ))}
+    //                 </div>
+    //                 <div className='icons'>
+    //                     <div className='icon'>
+    //                         <BsSearch />
+    //                     </div>
+    //                     <div className='icon'>
+    //                         <RiNotification3Line />
+    //                     </div>
+    //                     <div className='icon'>
+    //                         <GoPerson />
+    //                     </div>
+    //                 </div>
+    //             </div>
+    //         </Wrapper>
+    //     </div>
+    // );
+
+    return <>
+        <section class="top-nav">
+            <div className='logo'>
+                <img src='/assets/images/logo.png' alt='Logo' />
+            </div>
+            <input id="menu-toggle" type="checkbox" />
+            <label class='menu-button-container' for="menu-toggle">
+                <div class='menu-button'></div>
+            </label>
+            <div class="menu">
+                {navLinks.map((link) => (
+                    <div key={link.id} className='link'>
+                        {link.label}
                     </div>
-                    <div className='icons'>
-                        <div className='icon'>
-                            <BsSearch />
-                        </div>
-                        <div className='icon'>
-                            <RiNotification3Line />
-                        </div>
-                        <div className='icon'>
-                            <GoPerson />
-                        </div>
-                    </div>
-                </div>
-            </Wrapper>
-        </div>
-    );
+                ))}
+            </div>
+
+        </section>
+    </>
 };
 
 export default Navbar;

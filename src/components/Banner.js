@@ -7,7 +7,7 @@ import { BsSave } from 'react-icons/bs'
 
 const Banner = () => {
     return (
-        <div className='main_wrapper'>
+        <div className='main_wrapper' id='banner'>
             <div className="wrapper_heading">
                 <div className="heading">Editor's pick
                 </div>

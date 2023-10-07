@@ -349,16 +349,13 @@
 @media only screen and (max-width: 600px) {
   .articles_container .article_wrapper {
     grid-template-columns: 1fr;
+    place-items: center;
   }
 
   .articles_container .article_wrapper .left .article_img {
     width: 100%;
   }
 
-  .articles_container .article_wrapper .right .card {
-    width: 80%;
-    height: fit-content;
-  }
   .articles_container
     .article_wrapper
     .right
@@ -371,6 +368,7 @@
   .articles_container .tabs {
     flex-direction: column;
     align-items: center;
+    gap: 6px;
   }
 
   .articles_container .article_wrapper .right .card {
@@ -385,5 +383,18 @@
   .articles_container .article_heading .description {
     font-size: 1.2rem;
     text-align: center;
+  }
+
+  .articles_container .article_heading {
+    margin: 1rem 0;
+    line-height: 1.2;
+  }
+
+  .articles_container {
+    margin-top: 1.4rem;
+  }
+
+  .articles_container .tabs {
+    margin-top: 1rem;
   }
 }

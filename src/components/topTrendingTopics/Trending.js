@@ -38,14 +38,14 @@ const Trending = () => {
     ]
 
     return (
-        <div className='trending_container'>
+        <div className='trending_container' id='trending'>
             <div className="trending_heading">
                 <div className="heading">Top trending topics</div>
                 <div className="discover">Discover 233 topics</div>
 
             </div>
             <div className="trending_cards">
-                {cards.map(card => <TrendingCard card={card} />)}
+                {cards.map((card, id) => <TrendingCard card={card} key={id} />)}
             </div>
         </div>
     )

@@ -57,7 +57,7 @@
 }
 
 .mainContiainer .exploreVidCads .badgeSave .badge span {
-  background-color: #fee2e2;
+  background-color: #df9331;
   border-radius: 20px;
   padding: 1px 10px;
   font-size: 14px;
@@ -123,5 +123,19 @@
   .mainContiainer .headings .headingTwo {
     font-size: 1.2rem;
     text-align: center;
+  }
+
+  .mainContiainer .headings {
+    line-height: 1.2;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .mainContiainer .exploreVidCads .badgeSave .badge span {
+    font-size: 12px;
+    padding: 4px 10px;
+  }
+  .mainContiainer .exploreVidCads .badgeSave .save {
+    font-weight: bold;
   }
 }

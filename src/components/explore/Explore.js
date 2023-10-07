@@ -32,13 +32,13 @@ const Explore = () => {
         }
     ]
     return (
-        <div className='explore_container'>
+        <div className='explore_container' id='explore'>
             <div className="explore_heading">
                 <div className="heading">Explore latest audio articles</div>
                 <div className="sec_heading">Click on the icon to enjoy the music or podcast 🎧</div>
             </div>
             <div className="explore_card_container">
-                {cards.map(card => <ExploreCard card={card} />)}
+                {cards.map((card, id) => <ExploreCard card={card} key={id} />)}
             </div>
         </div>
     )

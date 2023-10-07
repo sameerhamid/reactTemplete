@@ -9,27 +9,6 @@ const Footer = () => {
         <div className='footerContainer'>
             <Wrapper>
                 <div className="footerLinks">
-                    <div className="socialLinks">
-                        <div className="logo">
-                            <img src="/assets/images/logo.png" alt="" />
-                        </div>
-                        <div className="facebook">
-                            <div className="logo"><BsFacebook /></div>
-                            <div className="name">Facebook</div>
-                        </div>
-                        <div className="facebook">
-                            <div className="logo"><BsTwitter /></div>
-                            <div className="name">Twitter</div>
-                        </div>
-                        <div className="facebook">
-                            <div className="logo"><BsLinkedin /></div>
-                            <div className="name">LinkedIn</div>
-                        </div>
-                        <div className="facebook">
-                            <div className="logo"><BsInstagram /></div>
-                            <div className="name">Instagram</div>
-                        </div>
-                    </div>
 
                     <div className="gettingStarted">
                         <div className="link linkBold">Getting started</div>
@@ -57,13 +36,31 @@ const Footer = () => {
                     </div>
                     <div className="community">
                         <div className="link linkBold">Community</div>
-                        <div className="link">Discussion Forums</div>
-                        <div className="link">Code of Conduct</div>
-                        <div className="link">Community Resources</div>
+                        <div className="link">Discussion</div>
+                        <div className="link">Code</div>
+                        <div className="link">Community</div>
                         <div className="link">Contributing</div>
-                        <div className="link">Concurrent Mode</div>
+                        <div className="link">Concurrent</div>
                     </div>
+                    <div className="socialLinks">
 
+                        <div className="facebook">
+                            <div className="logo"><BsFacebook /></div>
+                            <div className="name">Facebook</div>
+                        </div>
+                        <div className="facebook">
+                            <div className="logo"><BsTwitter /></div>
+                            <div className="name">Twitter</div>
+                        </div>
+                        <div className="facebook">
+                            <div className="logo"><BsLinkedin /></div>
+                            <div className="name">LinkedIn</div>
+                        </div>
+                        <div className="facebook">
+                            <div className="logo"><BsInstagram /></div>
+                            <div className="name">Instagram</div>
+                        </div>
+                    </div>
                 </div>
             </Wrapper>
         </div>
